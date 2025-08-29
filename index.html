@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Loja Exemplo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Produtos Sustentaveis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-primary" type="button">Carrinho 🛒</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Carrossel menor -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-3 mx-auto" style="max-width: 800px;" data-bs-ride="carousel" data-bs-interval="3000">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Itens do carrossel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="assets/img/Gemini_Generated_Image_ce3hj9ce3hj9ce3h.png" class="d-block w-100" style="height: 600px; object-fit: cover;" alt="Promoção 1">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/img/Gemini_Generated_Image_ow06cpow06cpow06.png" class="d-block w-100" style="height: 600px; object-fit: cover;" alt="Promoção 2">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/img/Gemini_Generated_Image_f5oxkhf5oxkhf5ox.png" class="d-block w-100" style="height: 600px; object-fit: cover;" alt="Promoção 3">
+        </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+    </div>
+    <!-- Grid de Produtos -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Produtos em Destaque</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/Gemini_Generated_Image_q1ziapq1ziapq1zi.png" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Pano de Cera de Abelha</h5>
+                        <p class="card-text">Feito de algodão e cera de abelha, é um produto natural que se biodegrada no final de sua vida útil.</p>
+                        <a href="#" class="btn btn-primary">Ver Produto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/Gemini_Generated_Image_70s2f070s2f070s2.png" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Shampoo Sólido</h5>
+                        <p class="card-text">A maioria dos shampoos líquidos vem em frascos de plástico, que são um dos principais contribuintes para o lixo. O shampoo sólido não precisa de embalagem plástica, reduzindo o desperdício.</p>
+                        <a href="#" class="btn btn-primary">Ver Produto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/Gemini_Generated_Image_j7u6pj7u6pj7u6pj.png" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Escova de Louça de Fibra Vegetal</h5>
+                        <p class="card-text"> As escovas de louça convencionais são feitas de plástico e nylon, que não são biodegradáveis. Esta escova utiliza materiais naturais como madeira e fibras vegetais (por exemplo, de sisal, coco ou agave), que são renováveis e biodegradáveis.</p>
+                        <a href="#" class="btn btn-primary">Ver Produto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Redes Sociais</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Facebook</a></li>
+                        <li><a href="#" class="text-dark">Instagram</a></li>
+                        <li><a href="#" class="text-dark">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contato</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Email: contato@lojaexemplo.com</a></li>
+                        <li><a href="#" class="text-dark">Telefone: (11) 1234-5678</a></li>
+                        <li><a href="#" class="text-dark">Endereço: Rua Exemplo, 123</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Políticas da Loja</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-dark">Termos de Uso</a></li>
+                        <li><a href="#" class="text-dark">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-secondary text-white">
+            &copy; 2025 Loja Exemplo. Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
