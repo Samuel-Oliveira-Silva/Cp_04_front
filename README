@@ -1,0 +1,76 @@
+# E-commerce de Produtos Sustentáveis
+
+## Descrição do Projeto
+Este projeto é um **e-commerce de produtos sustentáveis**, desenvolvido utilizando **HTML, CSS e Bootstrap 5**. O objetivo do site é oferecer uma experiência moderna e responsiva para usuários que desejam consumir de forma consciente, promovendo produtos que respeitam o meio ambiente.  
+
+O site serve como exemplo de boas práticas em **design responsivo**, organização de layout e desenvolvimento front-end moderno.
+
+---
+
+## Estrutura do Site
+
+### 1. Página Inicial (Home)
+- **Header**: Barra de navegação com logo, menu e ícone de carrinho.  
+- **Banner**: Carrossel usando Bootstrap que destaca promoções e produtos em destaque.  
+- **Seções de Produtos**: Grid de produtos organizados em categorias (Roupas, Beleza, Casa, Tecnologia, etc.) utilizando cartões do Bootstrap.  
+
+### 2. Página de Categorias
+- Layout em **grid** exibindo produtos com imagem, nome, preço e botão "Adicionar ao Carrinho".  
+- **Filtros laterais** para pesquisar por preço, tipo de produto e marca, utilizando colunas do Bootstrap.
+
+### 3. Página de Detalhes do Produto
+- Exibição de informações detalhadas do produto: imagem principal, descrição, preço, especificações e botão de compra.
+
+### 4. Página de Contato
+- Formulário de contato estilizado com Bootstrap, contendo campos como **nome, email, assunto e mensagem**.
+
+### 5. Footer
+- Informações de rodapé, incluindo **links para redes sociais, informações de contato e políticas da loja**.
+
+---
+
+## Funcionalidades Interessantes
+- **Design responsivo**: adaptável para desktop, tablet e mobile.  
+- **Carrossel interativo**: permite destacar produtos e promoções dinamicamente.  
+- **Filtros e categorias**: ajudam o usuário a navegar facilmente pelos produtos.  
+- **Estrutura modular**: facilita a expansão para novas páginas ou funcionalidades.  
+- **Uso de Bootstrap 5**: aproveitando componentes prontos e responsivos.
+
+---
+
+## Tecnologias Utilizadas
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- Git e GitHub para versionamento  
+
+---
+
+## Como Executar
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/Samuel-Oliveira-Silva/Cp_04_front.git
+Abra o arquivo index.html em seu navegador.
+
+Navegue pelas páginas e explore as funcionalidades do site.
+
+Possíveis Melhorias Futuras
+Adicionar interação com carrinho de compras usando JavaScript.
+
+Integrar API de produtos para atualizar dinamicamente os itens.
+
+Implementar formulário de contato funcional com backend.
+
+Melhorar o SEO e performance do site.
+
+Integrantes do Grupo
+Cristian – RM: 565710
+
+João Lucas – RM: 562608
+
+Samuel – RM: 566244
+
+Site Online
+
+Acesse o projeto publicado no GitHub Pages:
+https://samuel-oliveira-silva.github.io/Cp_04_front/
