@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif; 
+}
+
+.logo-marca {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1b4332; 
+}
+
+.titulo-secao {
+    font-weight: 700;
+    color: #1b4332; 
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+#carrossel-banner .carousel-item img {
+    filter: brightness(0.8);
+}
+
+.cartao-produto {
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.cartao-produto .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
+}
+.cartao-produto .preco-produto {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d6a4f; 
+}
+
+.sidebar-titulo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+}
+
+.nav-pills .nav-link {
+    color: #333; 
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #2d6a4f; 
+    color: white; 
+}
+
+.nav-pills .nav-link:not(.active):hover {
+    background-color: #f0f0f0;
+}
+
+.btn-primary {
+    background-color: #2d6a4f; 
+    border-color: #2d6a4f; 
+    border-radius: 5px;
+}
+.btn-primary:hover {
+    background-color: #1b4332; 
+    border-color: #1b4332;
+}
+.rodape {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0; 
+    color: #6c757d; 
+    padding: 20px 0; 
+}

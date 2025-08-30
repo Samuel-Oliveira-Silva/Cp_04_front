@@ -3,51 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Loja Exemplo</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Categorias - EcoTrend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Produtos Sustentaveis</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand logo-marca" href="index.html">EcoTrend</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="categorias.html">Categorias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="produtos.html">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="menu-navegacao">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 </ul>
-                <button class="btn btn-outline-primary" type="button">Carrinho 🛒</button>
+                <a href="#" class="btn btn-outline-success">
+                    <i class="bi bi-cart"></i> Carrinho
+                </a>
             </div>
         </div>
-    </nav>
+    </header>
 
+    <main class="container my-5">
+        <h2 class="text-center titulo-secao">Nossos Produtos</h2>
 
-    <div>
+        <div class="row">
+            <aside class="col-lg-3">
+                <h4 class="sidebar-titulo">Categorias</h4>
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#v-pills-todos">Todos</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-roupas">Roupas</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-beleza">Beleza</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-casa">Casa</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-tecnologia">Tecnologia</button>
+                </div>
+            </aside>
 
+            <section class="col-lg-9">
+                <div class="tab-content" id="v-pills-tabContent">
 
+                    <div class="tab-pane fade show active" id="v-pills-todos">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://cdn.awsli.com.br/600x450/1081/1081221/produto/85692078/0c52cdfd60.jpg" class="card-img-top" alt="Camiseta"><div class="card-body"><h5 class="card-title">Camiseta Orgânica</h5><p class="card-text preco-produto">R$ 89,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMCil1aaBwNhVzlAokmpKbVDngK8ZRBsHZQ&s" class="card-img-top" alt="Tênis"><div class="card-body"><h5 class="card-title">Tênis de Garrafa PET</h5><p class="card-text preco-produto">R$ 279,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://www.omegaetiquetas.com.br/wp-content/uploads/2020/08/sacola-reutilizavel-em-curitiba.png" class="card-img-top" alt="Bolsa"><div class="card-body"><h5 class="card-title">Bolsa de Juta Ecológica</h5><p class="card-text preco-produto">R$ 149,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://s.drazzo.com.br/product/2024/04/550222-00204-1.jpg" class="card-img-top" alt="Calça"><div class="card-body"><h5 class="card-title">Calça de Linho Sustentável</h5><p class="card-text preco-produto">R$ 189,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRH1Ykl2aC32To1xwe1FvdPQZ6ytbekeVKwvH5s-uzy9KhyE98k_rESe-Jrcyztasi7hyWvulUuafv4SvA0zX3hyxLoqL8GV5ZuXdmG9AAz5tHFCGEcCQN-LK0AjYz7lopROdlIUBPHi20&usqp=CAc" class="card-img-top" alt="Shampoo"><div class="card-body"><h5 class="card-title">Shampoo Sólido de Alecrim</h5><p class="card-text preco-produto">R$ 38,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRdQwC8ISlRUa3EoMxstKCJ3Aosj4uBNVA8LUcRJOfU9liE0im_ykap10BDtHi3WtMgAdSrs3MTxi7pgE7rm5MI9S8furih6n8awQJPQYQbcchlAegZbbjnkpJ5Odwd5gUIi3i2Rw&usqp=CAc" class="card-img-top" alt="Sabonete"><div class="card-body"><h5 class="card-title">Sabonete Vegano de Lavanda</h5><p class="card-text preco-produto">R$ 24,50</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSc5US1CT8z0m30mBBh07JOBVcVILEvd5Zi-rif2liIzokStj5qOkRx4Y9TpA9fyE_BSVEI3onZ_jl8EkN3-IwKiVE_TdL0hJsnzfHG5GmhFuLMAeyz1NrMHEpr1EXDH_I7J-y1y4c&usqp=CAc" class="card-img-top" alt="Escova"><div class="card-body"><h5 class="card-title">Escova de Dentes de Bambu</h5><p class="card-text preco-produto">R$ 19,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://cdn.awsli.com.br/2500x2500/244/244021/produto/111766578/7698b71eca.jpg" class="card-img-top" alt="Desodorante"><div class="card-body"><h5 class="card-title">Desodorante Natural em Barra</h5><p class="card-text preco-produto">R$ 42,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://a-static.mlcdn.com.br/800x560/copo-retratil-bambu-com-porta-comprimidos-fiber-210-ml-topget/fitine/000322010-01/58122c56963e7c65ad49dcb1246f8142.jpeg" class="card-img-top" alt="Copo"><div class="card-body"><h5 class="card-title">Copo Retrátil de Bambu</h5><p class="card-text preco-produto">R$ 45,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0xLvNqkrNdxfifDpc7tOcJBZ2dJpvVqvkA&s" class="card-img-top" alt="Vaso"><div class="card-body"><h5 class="card-title">Vaso de Cerâmica Artesanal</h5><p class="card-text preco-produto">R$ 95,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://images.tcdn.com.br/img/img_prod/1098943/kit_talheres_de_bambu_reuna_3und_33577_1_dfbf3d95d252456b7fe61c60b8586543.jpg" class="card-img-top" alt="Talheres"><div class="card-body"><h5 class="card-title">Kit de Talheres de Bambu</h5><p class="card-text preco-produto">R$ 55,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://cdn.awsli.com.br/600x1000/2626/2626263/produto/226635712/kit-canudo-de-inox-curvo---escova-tbtij3dtav.jpg" class="card-img-top" alt="Canudo"><div class="card-body"><h5 class="card-title">Canudo de Inox Reutilizável</h5><p class="card-text preco-produto">R$ 29,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://dccomputadores.com.br/wp-content/uploads/2023/06/Carregador-Portatil-Powerbank-Bateria-Solar-80000.webp" class="card-img-top" alt="Carregador"><div class="card-body"><h5 class="card-title">Carregador Portátil Solar</h5><p class="card-text preco-produto">R$ 199,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://www.brindesdemais.com.br/fotos/produtos/originais/3425/mochila-termica-fd1773305e9f4abc7e6ea03255a342307d1d35c7.webp" class="card-img-top" alt="Mochila"><div class="card-body"><h5 class="card-title">Mochila de Tecido PET</h5><p class="card-text preco-produto">R$ 189,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://http2.mlstatic.com/D_NQ_NP_846980-CBT81521929556_012025-O.webp" class="card-img-top" alt="Teclado"><div class="card-body"><h5 class="card-title">Teclado de Bambu Sem Fio</h5><p class="card-text preco-produto">R$ 259,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://m.media-amazon.com/images/I/61sAavUA-gL._UF1000,1000_QL80_.jpg" class="card-img-top" alt="Calculadora"><div class="card-body"><h5 class="card-title">Calculadora Solar de Bambu</h5><p class="card-text preco-produto">R$ 75,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            
+                        </div>
+                    </div>
 
+                    <div class="tab-pane fade" id="v-pills-roupas">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://cdn.awsli.com.br/600x450/1081/1081221/produto/85692078/0c52cdfd60.jpg" class="card-img-top" alt="Camiseta"><div class="card-body"><h5 class="card-title">Camiseta Orgânica</h5><p class="card-text preco-produto">R$ 89,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMCil1aaBwNhVzlAokmpKbVDngK8ZRBsHZQ&s" class="card-img-top" alt="Tênis"><div class="card-body"><h5 class="card-title">Tênis de Garrafa PET</h5><p class="card-text preco-produto">R$ 279,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://www.omegaetiquetas.com.br/wp-content/uploads/2020/08/sacola-reutilizavel-em-curitiba.png" class="card-img-top" alt="Bolsa"><div class="card-body"><h5 class="card-title">Bolsa de Juta Ecológica</h5><p class="card-text preco-produto">R$ 149,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://s.drazzo.com.br/product/2024/04/550222-00204-1.jpg" class="card-img-top" alt="Calça"><div class="card-body"><h5 class="card-title">Calça de Linho Sustentável</h5><p class="card-text preco-produto">R$ 189,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            
+                        </div>
+                    </div>
 
+                    <div class="tab-pane fade" id="v-pills-beleza">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRH1Ykl2aC32To1xwe1FvdPQZ6ytbekeVKwvH5s-uzy9KhyE98k_rESe-Jrcyztasi7hyWvulUuafv4SvA0zX3hyxLoqL8GV5ZuXdmG9AAz5tHFCGEcCQN-LK0AjYz7lopROdlIUBPHi20&usqp=CAc" class="card-img-top" alt="Shampoo"><div class="card-body"><h5 class="card-title">Shampoo Sólido de Alecrim</h5><p class="card-text preco-produto">R$ 38,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRdQwC8ISlRUa3EoMxstKCJ3Aosj4uBNVA8LUcRJOfU9liE0im_ykap10BDtHi3WtMgAdSrs3MTxi7pgE7rm5MI9S8furih6n8awQJPQYQbcchlAegZbbjnkpJ5Odwd5gUIi3i2Rw&usqp=CAc" class="card-img-top" alt="Sabonete"><div class="card-body"><h5 class="card-title">Sabonete Vegano de Lavanda</h5><p class="card-text preco-produto">R$ 24,50</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSc5US1CT8z0m30mBBh07JOBVcVILEvd5Zi-rif2liIzokStj5qOkRx4Y9TpA9fyE_BSVEI3onZ_jl8EkN3-IwKiVE_TdL0hJsnzfHG5GmhFuLMAeyz1NrMHEpr1EXDH_I7J-y1y4c&usqp=CAc" class="card-img-top" alt="Escova"><div class="card-body"><h5 class="card-title">Escova de Dentes de Bambu</h5><p class="card-text preco-produto">R$ 19,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://cdn.awsli.com.br/2500x2500/244/244021/produto/111766578/7698b71eca.jpg" class="card-img-top" alt="Desodorante"><div class="card-body"><h5 class="card-title">Desodorante Natural em Barra</h5><p class="card-text preco-produto">R$ 42,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                        </div>
+                    </div>
 
+                    <div class="tab-pane fade" id="v-pills-casa">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://a-static.mlcdn.com.br/800x560/copo-retratil-bambu-com-porta-comprimidos-fiber-210-ml-topget/fitine/000322010-01/58122c56963e7c65ad49dcb1246f8142.jpeg" class="card-img-top" alt="Copo"><div class="card-body"><h5 class="card-title">Copo Retrátil de Bambu</h5><p class="card-text preco-produto">R$ 45,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0xLvNqkrNdxfifDpc7tOcJBZ2dJpvVqvkA&s" class="card-img-top" alt="Vaso"><div class="card-body"><h5 class="card-title">Vaso de Cerâmica Artesanal</h5><p class="card-text preco-produto">R$ 95,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://images.tcdn.com.br/img/img_prod/1098943/kit_talheres_de_bambu_reuna_3und_33577_1_dfbf3d95d252456b7fe61c60b8586543.jpg" class="card-img-top" alt="Talheres"><div class="card-body"><h5 class="card-title">Kit de Talheres de Bambu</h5><p class="card-text preco-produto">R$ 55,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://cdn.awsli.com.br/600x1000/2626/2626263/produto/226635712/kit-canudo-de-inox-curvo---escova-tbtij3dtav.jpg" class="card-img-top" alt="Canudo"><div class="card-body"><h5 class="card-title">Canudo de Inox Reutilizável</h5><p class="card-text preco-produto">R$ 29,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                        </div>
+                    </div>
 
+                    <div class="tab-pane fade" id="v-pills-tecnologia">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://dccomputadores.com.br/wp-content/uploads/2023/06/Carregador-Portatil-Powerbank-Bateria-Solar-80000.webp" class="card-img-top" alt="Carregador"><div class="card-body"><h5 class="card-title">Carregador Portátil Solar</h5><p class="card-text preco-produto">R$ 199,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://www.brindesdemais.com.br/fotos/produtos/originais/3425/mochila-termica-fd1773305e9f4abc7e6ea03255a342307d1d35c7.webp" class="card-img-top" alt="Mochila"><div class="card-body"><h5 class="card-title">Mochila de Tecido PET</h5><p class="card-text preco-produto">R$ 189,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://http2.mlstatic.com/D_NQ_NP_846980-CBT81521929556_012025-O.webp" class="card-img-top" alt="Teclado"><div class="card-body"><h5 class="card-title">Teclado de Bambu Sem Fio</h5><p class="card-text preco-produto">R$ 259,90</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="card cartao-produto"><img src="https://m.media-amazon.com/images/I/61sAavUA-gL._UF1000,1000_QL80_.jpg" class="card-img-top" alt="Calculadora"><div class="card-body"><h5 class="card-title">Calculadora Solar de Bambu</h5><p class="card-text preco-produto">R$ 75,00</p><a href="#" class="btn btn-primary w-100">Adicionar ao Carrinho</a></div></div></div>
+                        </div>
+                    </div>
 
-    </div>
+                </div> </section>
+        </div>
+    </main>
 
-    <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-5">
         <div class="container p-4">
             <div class="row">
@@ -81,6 +144,8 @@
             &copy; 2025 Loja Exemplo. Todos os direitos reservados.
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
 </html>
